@@ -1,0 +1,33 @@
+{
+  "name": "module9",
+  "version": "1.0.0",
+  "description": "",
+  "main": "config.js",
+  "scripts": {
+    "postinstall": "webdriver-manager update --versions.standalone=3.14.0",
+    "test": "protractor ./config/config.js",
+    "pretest": "npm run remove-logs",
+    "remove-logs": "node ./utils/cleanup/logsCleaner.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "cucumber": "^6.0.2",
+    "framework": "0.0.0",
+    "fs-extra": "^8.1.0",
+    "jasmine": "^3.5.0",
+    "mocha": "^6.2.1",
+    "protractor": "^5.4.2",
+    "protractor-cucumber-framework": "^6.1.3",
+    "webdriver": "^5.14.4",
+    "winston": "^3.2.1",
+    "yargs": "^14.2.0"
+  },
+  "devDependencies": {
+    "jasmine-spec-reporter": "^4.2.1",
+    "mocha-simple-html-reporter": "^1.1.0",
+    "protractor-beautiful-reporter": "^1.3.5",
+    "protractor-jasmine2-html-reporter": "0.0.7"
+  }
+}
